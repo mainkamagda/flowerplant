@@ -1,0 +1,179 @@
+* { box-sizing: border-box; }
+body
+{ margin: 0; font-family: system-ui, Arial, sans-serif;
+  background: #ffe4ec;
+  color: #8f002d; }
+
+a { color: #257246; }
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 30px 0; }
+
+.header, .footer { 
+  background:white;
+  border-bottom: 1px solid #e8e8e8; }
+
+.footer {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: none; }
+
+.header-inner, .footer-inner {
+  display: flex; align-items:center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0; }
+
+.logo {
+   margin: 0;
+  font-size: 40px; }
+
+
+.nav {
+  display: flex;
+  gap: 1rem; }
+
+.nav-link { 
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px; }
+
+.nav-link.active {
+  background: #257246;
+  color: white;}
+
+.latin{
+  text-align: center;
+  color: #a7a7a7;
+}
+
+.muted {
+  color: #a7a7a7;
+  text-align: left;
+  margin: 0;}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 25px;
+  align-items: stretch; 
+margin-bottom: 40px;}
+
+.hero-card {
+  background-image: url("./assets/nisa-cokokumus-M5o8bGYXajc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  height: 100%; }
+
+.bullets{ 
+  padding-left: 1.1rem; }
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; }
+
+.card {
+  background: white;
+  border: 1px #e8e8e8;
+  border-radius: 16px;
+  padding-top: 0px; 
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  color: #257246;
+  line-height: 1.1;
+  font-size: 10pt;
+}
+
+.plant-care-examples {
+  font-size: 20pt;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+  .plant-img {
+    width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 10px 0;
+  display: block;
+}
+
+  .plant-title {
+    font-size: 15pt;
+    color: #8f002d; 
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.plant-details {
+  margin-top: 40px; 
+}
+
+.row {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.search{
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.4rem; }
+
+.search input {
+  padding: 0.65rem;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9; }
+
+.form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 520px; }
+
+.form label {
+  display: grid;
+  gap: 0.35rem; }
+
+.form input, .form select{ 
+  padding: 0.65rem;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9; }
+
+.actions{ 
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+justify-content: center; }
+
+.actions button{ 
+  cursor: pointer; }
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.55rem 0.8rem;
+  border-radius: 10px;
+  background:#257246;
+  color: white;
+  cursor: pointer; }
+
+.prose {
+  max-width: 800px; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .hero { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  .header-inner, .footer-inner { flex-direction: column; align-items: stretch; }
+}
